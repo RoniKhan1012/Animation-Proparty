@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Proparty</title>
+
+    <style>
+        .img{
+            height: 200px;
+            max-width:200px;
+            display: block;
+            margin: 0 auto;
+            border: solid black 10px;
+            border-radius: 50%;
+            margin-top: 200px;
+            
+        }
+        .img:hover{
+            animation-name: img-anim;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes img-anim {
+            0%{
+                max-width: 200px;
+                border-color: black;
+            }
+            50%{
+                max-width: 300px;
+                border-color:red;
+            }
+            100%{
+                border-color: chartreuse;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="messi.jpg" class="img">
+</body>
+</html>
